@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05088C4527E8ED6D00CDD2A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05088C4427E8ED6D00CDD2A4 /* HomeView.swift */; };
+		05088C4927E8F34400CDD2A4 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05088C4827E8F34400CDD2A4 /* CalendarView.swift */; };
+		05088C4B27E8F34C00CDD2A4 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05088C4A27E8F34C00CDD2A4 /* IndexView.swift */; };
+		05088C4F27E8F7C600CDD2A4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05088C4E27E8F7C600CDD2A4 /* ProfileView.swift */; };
+		05088C5127E8F7D300CDD2A4 /* FocusesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05088C5027E8F7D300CDD2A4 /* FocusesView.swift */; };
+		05088C5327E8FC9100CDD2A4 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05088C5227E8FC9100CDD2A4 /* AddTaskView.swift */; };
+		05088C5627E9374C00CDD2A4 /* UpTodo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05088C5427E9374C00CDD2A4 /* UpTodo.xcdatamodeld */; };
+		05088C5827E9380A00CDD2A4 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05088C5727E9380A00CDD2A4 /* DataController.swift */; };
 		050BD41527E695F1000DBDEE /* UpTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050BD41427E695F1000DBDEE /* UpTodoApp.swift */; };
 		050BD41727E695F1000DBDEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050BD41627E695F1000DBDEE /* ContentView.swift */; };
 		050BD41927E695F2000DBDEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050BD41827E695F2000DBDEE /* Assets.xcassets */; };
@@ -17,6 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05088C4427E8ED6D00CDD2A4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		05088C4827E8F34400CDD2A4 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		05088C4A27E8F34C00CDD2A4 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
+		05088C4E27E8F7C600CDD2A4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		05088C5027E8F7D300CDD2A4 /* FocusesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusesView.swift; sourceTree = "<group>"; };
+		05088C5227E8FC9100CDD2A4 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		05088C5527E9374C00CDD2A4 /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
+		05088C5727E9380A00CDD2A4 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		050BD41127E695F1000DBDEE /* UpTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		050BD41427E695F1000DBDEE /* UpTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpTodoApp.swift; sourceTree = "<group>"; };
 		050BD41627E695F1000DBDEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +54,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05088C4327E8ED5700CDD2A4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				05088C4427E8ED6D00CDD2A4 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		05088C4627E8F32B00CDD2A4 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				05088C4A27E8F34C00CDD2A4 /* IndexView.swift */,
+				05088C5227E8FC9100CDD2A4 /* AddTaskView.swift */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		05088C4727E8F33700CDD2A4 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				05088C4827E8F34400CDD2A4 /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		05088C4C27E8F7B000CDD2A4 /* Focuses */ = {
+			isa = PBXGroup;
+			children = (
+				05088C5027E8F7D300CDD2A4 /* FocusesView.swift */,
+			);
+			path = Focuses;
+			sourceTree = "<group>";
+		};
+		05088C4D27E8F7B800CDD2A4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				05088C4E27E8F7C600CDD2A4 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		050BD40827E695F1000DBDEE = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +120,7 @@
 				050BD41427E695F1000DBDEE /* UpTodoApp.swift */,
 				050BD41827E695F2000DBDEE /* Assets.xcassets */,
 				050BD41A27E695F2000DBDEE /* Preview Content */,
+				05088C5427E9374C00CDD2A4 /* UpTodo.xcdatamodeld */,
 			);
 			path = UpTodo;
 			sourceTree = "<group>";
@@ -85,6 +143,11 @@
 		050BD42327E6982A000DBDEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				05088C4D27E8F7B800CDD2A4 /* Profile */,
+				05088C4C27E8F7B000CDD2A4 /* Focuses */,
+				05088C4727E8F33700CDD2A4 /* Calendar */,
+				05088C4627E8F32B00CDD2A4 /* Index */,
+				05088C4327E8ED5700CDD2A4 /* Home */,
 				050BD42B27E6B100000DBDEE /* SetPin */,
 				050BD42727E69BB4000DBDEE /* Onboarding */,
 				050BD41627E695F1000DBDEE /* ContentView.swift */,
@@ -95,6 +158,7 @@
 		050BD42427E6982F000DBDEE /* ModelViews */ = {
 			isa = PBXGroup;
 			children = (
+				05088C5727E9380A00CDD2A4 /* DataController.swift */,
 			);
 			path = ModelViews;
 			sourceTree = "<group>";
@@ -194,10 +258,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05088C5627E9374C00CDD2A4 /* UpTodo.xcdatamodeld in Sources */,
+				05088C5327E8FC9100CDD2A4 /* AddTaskView.swift in Sources */,
 				050BD42627E69935000DBDEE /* OnboardingView.swift in Sources */,
+				05088C4F27E8F7C600CDD2A4 /* ProfileView.swift in Sources */,
+				05088C4927E8F34400CDD2A4 /* CalendarView.swift in Sources */,
 				050BD41727E695F1000DBDEE /* ContentView.swift in Sources */,
 				050BD42D27E6B132000DBDEE /* SetPinView.swift in Sources */,
+				05088C5127E8F7D300CDD2A4 /* FocusesView.swift in Sources */,
+				05088C4527E8ED6D00CDD2A4 /* HomeView.swift in Sources */,
+				05088C4B27E8F34C00CDD2A4 /* IndexView.swift in Sources */,
 				050BD42A27E69F79000DBDEE /* OnboardingNav.swift in Sources */,
+				05088C5827E9380A00CDD2A4 /* DataController.swift in Sources */,
 				050BD41527E695F1000DBDEE /* UpTodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +471,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		05088C5427E9374C00CDD2A4 /* UpTodo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				05088C5527E9374C00CDD2A4 /* Task.xcdatamodel */,
+			);
+			currentVersion = 05088C5527E9374C00CDD2A4 /* Task.xcdatamodel */;
+			path = UpTodo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 050BD40927E695F1000DBDEE /* Project object */;
 }

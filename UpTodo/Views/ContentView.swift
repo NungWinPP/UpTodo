@@ -9,9 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("didSetPin") var didSetPin: Bool = false
+    @EnvironmentObject var opData: Views
+
     var body: some View {
-        OnboardingView()
+        switch (opData.currentView){
+        case .onboarding:
+            OnboardingView()
+                .environmentObject(opData)
+        case .setPin:
+            SetPinView()
+                .environmentObject(opData)
+        case .home:
+            HomeView()
+                .environmentObject(opData)
+        default:
+            HomeView()
+                .environmentObject(opData)
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     @State private var onPage = 0
+    @EnvironmentObject var currentView: Views
 
     let pageData = [
         ["Manage your tasks", "You can easily manage all of your daily\ntasks in DoMe for free"],
@@ -86,7 +87,7 @@ struct OnboardingView: View {
                                 .foregroundColor(.white)
                                 .padding(.trailing)
                             } else {
-                                NavigationLink(destination: SetPinView()){
+//                                NavigationLink(destination: SetPinView()){
                                     Text("GET STARTED")
                                         .padding(.horizontal, 23)
                                         .padding(.vertical)
@@ -94,7 +95,10 @@ struct OnboardingView: View {
                                         .cornerRadius(5)
                                         .foregroundColor(.white)
                                         .padding(.trailing)
-                                }
+                                        .onTapGesture {
+                                            currentView.currentView = .home
+                                        }
+                                //}
                             }
 
                         }
